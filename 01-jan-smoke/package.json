@@ -1,0 +1,38 @@
+{
+  "name": "01-jan-smoke",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "author": "Chris Anderson <chris@heyanderson.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp build",
+    "start": "budo --live --css ./src/style/app.css -v ./src/index.js -- -t babelify",
+    "glsl": "glslify-live"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-plugin-glslify": "^2.0.0",
+    "babel-plugin-transform-flow-strip-types": "^6.21.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-latest": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.3.0",
+    "budo": "^9.4.5",
+    "flow-bin": "^0.37.4",
+    "glslify-live": "^2.1.1",
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sourcemaps": "^2.4.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.8.0"
+  },
+  "dependencies": {
+    "glsl-curl-noise": "^0.0.4",
+    "glsl-noise": "^0.0.0",
+    "glslify": "^6.0.1",
+    "three": "^0.83.0"
+  }
+}
